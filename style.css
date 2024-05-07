@@ -691,6 +691,10 @@ a{
 
 
 @media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
     .form1 input{
         width: 57.5%;
     }
@@ -754,6 +758,15 @@ a{
         flex-wrap: wrap;
         margin-left: 10px;
     }
+
+    .section3 .right2 h3{
+        font-size: 1.3rem;
+    }
+
+    .section3 .righth{
+        font-size: 1.2rem;
+    }
+
     .section4{
         display: flex;
         width: 93.7%;
@@ -767,6 +780,22 @@ a{
     .cardText{
         width: 85%;
         align-items: center;
+    }
+
+    .section6{
+       width: 100%;
+       overflow-x: hidden;
+        
+    }
+
+    .partnerHead {
+        width: 40%;
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .partners {
+        width: 90%;
     }
     .section8{
         display: flex;
