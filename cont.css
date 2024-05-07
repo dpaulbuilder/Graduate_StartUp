@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    background-color: white;
+    /* border: 2px solid red; */
+    animation: slide 1.5s forwards;
+
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.medialogo{
+  position: absolute;
+  top: 40px;
+  margin-left: 8%;
+  display: flex;
+  float: left;
+  margin-right: 50px;
+  background-color: rgb(0, 162, 255);
+  color: white;
+  font-size: x-large;
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* .navbar img{
+ 
+position: absolute;
+top: 40px;
+margin-left: 8%;
+
+} */
+.navigation{
+    display: flex;
+    list-style: none;
+    margin-left: 53%;
+    padding: 40px;
+
+}
+
+.navigation li{
+    margin-right: 60px;
+    margin-top: 16px;
+
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navigation li a:hover{
+color: rgb(0, 162, 255);
+}
+
+
+#Login{
+    margin-left: 10%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#Login:hover {
+    animation: LoginAnimation 0.7s infinite alternate;
+    color: rgb(0, 162, 255);
+  }
+  
+  @keyframes LoginAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+#Register{
+    margin-left: 5%;
+    background-color: rgb(0, 162, 255);
+    font-size: 16px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 500;
+
+}
+
+#Register:hover {
+    animation: RegisterAnimation 0.7s infinite alternate;
+  }
+  
+  @keyframes RegisterAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+.Heading{
+    background-color: rgb(0, 162, 255);
+    padding: 100px;
+    height: 450px;
+    margin-bottom: 10%;
+}
+
+.Heading h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.Heading h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.contact-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+ 
+}
+
+
+
+.Contact{
+   animation: slideIn 1.5s forwards;
+
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.Contact h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+.contact-01{
+    display: flex;
+    margin-bottom: 40px;
+    /* background-color: blue; */
+
+}
+
+.contact-01 img{
+  margin-top: 8px;
+}
+
+.contact-02{
+  display: flex;
+  /* background-color: blue; */
+  margin-bottom: 40px;
+
+}
+
+.contact-02 img{
+  margin-top: 8px;
+}
+
+.contact-03{
+  display: flex;
+
+
+}
+
+
+.contact-03 img{
+  margin-top: 8px;
+}
+
+.contact-01 > div{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.contact-02 > div{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.contact-03 > div{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+.line{
+  width: 1px;
+  background-color: rgb(160, 160, 160);
+  height: 35px;
+}
+
+
+.line1{
+  width: 1px;
+  background-color: rgb(160, 160, 160);
+  height: 90px;
+}
+
+
+.contact-form{
+  background-color: white;
+  width: 50%;
+  margin-right: 50px; 
+  padding: 30px;
+  border-radius: 10px;
+  animation: slideInFromRight 1.5s forwards;
+  
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.contact-form:hover{
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+
+}
+
+
+form input{
+padding: 15px 300px 15px 15px;
+border-radius: 5px;
+font-size: 16px;
+margin-bottom: 20px;
+color: gray;
+border: 1px solid gray;
+
+
+}
+
+
+.custom-select{
+  padding: 15px 270px 15px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: gray;
+  border: 1px solid gray;
+  
+  }
+
+  .custom-textarea{
+    padding: 15px 0px 15px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: gray;
+    border: 1px solid gray;
+  }
+  
+  .btn{
+    padding: 10px 223px  10px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+    background-color: rgb(0, 162, 255);
+    border: none;
+    border-radius: 5px;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  .btn:hover{
+    background-color: rgb(7, 142, 220);;
+  }
+
+  @media (max-width:900px){
+
+    .navigation li{
+      display: none;
+    } 
+    body{
+      overflow-x: hidden;
+    }
+
+    #Login{
+      display: none;
+    }
+
+    #Register{
+      display: none;
+      animation: none;
+    }
+
+    .navigation{
+      display: flex;
+      padding: 50px;
+    }
+
+    .navbar img{
+      width: 25%;
+    
+
+    }
+
+    .Heading h1{
+      font-size: 50px;
+      margin-top: 20%;
+      text-align: center;
+      
+    }
+    
+    .Heading h3{
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .contact-container{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 100px;
+   
+  }
+  
+ 
+  .contact-01{
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+
+  }
+
+  .contact-01 img{
+    width: 10%
+  }
+
+  .contact-02{
+    display: flex;
+    margin-bottom: 40px;
+
+  }
+
+  .contact-02 img{
+    margin-top: 8px;
+    width: 10%;
+  }
+  
+  .contact-03{
+    display: flex;
+    margin-bottom: 50px;
+
+  }
+
+  .contact-03 img{
+    margin-top: 8px;
+    width: 10%;
+  }
+
+  .contact-form{
+    width: 60%;
+    margin-right: 50%;
+    animation: none;
+  }
+
+  .contact-form:hover{
+    background: none;
+    box-shadow: none;
+    padding: 0px;
+    border-radius: 10px;
+    
+    }
+
+  }
+
+  .contact-form{
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  form input{
+    padding: 15px 150px 15px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: gray;
+    border: 1px solid gray;
+    
+    
+    }
+    
+    .custom-select{
+      padding: 15px 120px 15px 15px;
+      }
+    
+      
+    .custom-textarea{
+      width: 350px;
+
+    }
+    
+
+    .btn{
+      padding: 10px 150px  10px;
+
+    }
+
+
+
+
+
